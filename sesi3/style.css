@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f8f9fa;
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+    font-family : roboto, san-serif;
+}
+
+.site-content{
+    max-width: 1125px;
+    margin: 0 auto;
+    background-color: rgb(249, 252, 251);
+}
+
+.hero{
+    padding: 120px 15px;
+    text-align: center;
+}
+
+.title, .subtitle{
+    display: block;
+}
+
+.title{
+    font-family: 'Playfair Display';
+}
+
+.subtitle{
+    font-family: 'Caveat';
+    font-weight: normal;
+}
+
+.hero .title{
+    fot-size: 72px;
+}
+
+.hero .subtitle{
+    font-size: 64px;
+}
+
+.hero p{
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.hero form{
+    max-width: 550px;/*saat layar dikecilkan masih tetap*/
+    margin: 70 auto 0;
+    position: relative;/*batasan untuk position absoulute*/
+}
+
+.hero form input{
+    width: 100%;
+    font-size: 16px;
+    padding: 20px 70px 25px 25px;
+    border-radius: 45px;
+    border: 2ps solid white;
+    box-shadow: 0 10px 13px rgba(0,0,0,0.05);
+    outline: none;
+   /* transition: border-color;*/
+}
+
+.hero from input: fokus{
+    border: 2px solid #57adfe;
+}
+
+.hero from button{
+    position: absolute;/*agar melayang*/
+    top: 5px;
+    right: 18px;
+    font-size: 36px;
+    color: #e3a6a9;
+    border: none;
+    background: none;
+}
+
+.grid-layout{
+   
+}
+
+.grid-layout:after{
+    content: " ";
+    clear: both;
+    display: block;
+}
+
+.grid-item{
+    width: 33.3333%;
+    float: left;
+    padding: 0 15px;
+}
+
+.gride-item:nth-child(3n+1){
+    clear: both;
+}
+
+.taman{
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    box-shadow: 0 9 px 18px rgba(0,0,0,0.05);
+}
+
+.taman figure{margine: 0}
+.taman figure img{margine: 100%} /*memaksa images kecil jadi 100%*/
+.taman-detail{
+    padding: 15px;
+    text-align: center;
+}
+
+.taman a{
+    text-decoration: none;
+}
+
+.taman-detail h2{
+    font-size: 28px;
+    margin: 5px 0 15px;
+}
+
+.taman-detail .title{
+    color: #363636;
+}
+
+.taman-detail .subtitle{
+    color: #888;
+}
+
+.taman-detail p{
+    font-size: 14px;
+    color: #929292;
+}
+
+.footer{
+    text-align: center;
+    pad: 90px 15px 40px;
+    color: #535353;
+}
+
+@media screen and (max-width:990px){
+    .grid-item{width: 50%;}
+    .grid-item:nth-child(3n+1){clear: none}
+    .grid-item:nth-child(2n+1){clear: both}
+}
+
+@media screen and (max-width: 480px){
+    .grid-item{width: 100%}
+    .grid-item:nth-child(3n+1){clear: none}
+    .grid-item:nth-child(2n+1){clear: both}
+}
