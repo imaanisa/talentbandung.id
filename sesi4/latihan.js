@@ -94,7 +94,7 @@ hallo( "ima" );
 
 
 //function greet(){
- //   alert ("hello");
+//   alert ("hello");
 //}
 var btngreet = document.getElementById ("sayhi");
 btngreet.addEventListener("click", greet);
